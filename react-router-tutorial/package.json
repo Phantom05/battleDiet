@@ -1,16 +1,18 @@
 {
-  "name": "my-app",
+  "name": "react-router-tutorial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cross-env": "^5.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
